@@ -1,0 +1,133 @@
+* General Reset */
+{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    padding-top: 40px; 
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #1a1a1a;
+    color: white;
+    position: fixed;
+    width: 94%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Navigation */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.menu li a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url('empowering communities.webp') no-repeat center center/cover;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    color: rgb(20, 19, 19);
+    margin-top: 40px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 16px;
+}
+
+.section {
+    padding: 40px 5%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+.section-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.section-content p {
+    font-size: 18px;
+}
+
+/* Social Links */
+.social-links a {
+    display: inline-block;
+    margin: 5px 10px;
+    color: #1e6c78;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Light Section (for alternating section colors) */
+.light {
+    background-color: #f0f0f0;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
