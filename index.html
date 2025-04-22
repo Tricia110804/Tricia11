@@ -90,7 +90,7 @@
 
     <script>
         let attempts = 3; // Maximum attempts
-        let lockoutTime = 10; // 10 seconds lockout
+        let lockoutTime = 10; 
 
         function getStoredPassword() {
             return localStorage.getItem("password") || "admin123"; 
@@ -112,8 +112,8 @@
             let storedUsername = getStoredUsername();
 
             if (username === storedUsername && password === storedPassword) {
-                localStorage.setItem("loggedIn", "true"); // Save login status
-                window.location.href = "LD1.html"; // Redirect sa homepage
+                localStorage.setItem("loggedIn", "true"); 
+                window.location.href = "LD1.html";
             } else {
                 attempts--; 
                 if (attempts > 0) {
@@ -131,7 +131,7 @@
                             clearInterval(timer);
                             attempts = 3; // Reset attempts
                             errorMessage.textContent = "";
-                            loginBtn.disabled = false; // Enable login button
+                            loginBtn.disabled = false; 
                         }
                     }, 1000);
                 }
@@ -142,7 +142,7 @@
         document.getElementById("forgotPassBtn").addEventListener("click", function() {
             const newPassword = prompt("Enter your new password:");
             if (newPassword) {
-                localStorage.setItem("password", newPassword); // Save new password
+                localStorage.setItem("password", newPassword); 
                 alert("Password successfully changed! You can now login with the new password.");
             }
         });
