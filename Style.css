@@ -1,4 +1,4 @@
-* General Reset */
+
 {
 
     margin: 0;
@@ -12,7 +12,6 @@ body {
     padding-top: 40px; 
 }
 
-/* Container */
 .container {
     display: flex;
     justify-content: space-between;
@@ -26,13 +25,10 @@ body {
     z-index: 1000;
 }
 
-/* Logo */
 .logo {
     font-size: 30px;
     font-weight: bold;
 }
-
-/* Navigation */
 .menu {
     list-style: none;
     display: flex;
@@ -48,8 +44,6 @@ body {
 .menu li a:hover {
     color: #00bcd4;
 }
-
-/* Hero Section */
 .hero {
     position: relative;
     height: 80vh;
@@ -105,8 +99,6 @@ body {
 .section-content p {
     font-size: 18px;
 }
-
-/* Social Links */
 .social-links a {
     display: inline-block;
     margin: 5px 10px;
@@ -114,17 +106,12 @@ body {
     font-weight: bold;
     text-decoration: none;
 }
-
 .social-links a:hover {
     text-decoration: underline;
 }
-
-/* Light Section (for alternating section colors) */
 .light {
     background-color: #f0f0f0;
 }
-
-/* Footer */
 footer {
     background-color: #1a1a1a;
     color: white;
