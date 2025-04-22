@@ -89,7 +89,7 @@
     </div>
 
     <script>
-        let attempts = 3; // Maximum attempts
+        let attempts = 3; 
         let lockoutTime = 10; 
 
         function getStoredPassword() {
@@ -101,7 +101,7 @@
         }
 
         document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault(); 
 
             const username = document.getElementById("username").value;
             const password = document.getElementById("password").value;
@@ -120,7 +120,7 @@
                     errorMessage.textContent = "Incorrect username or password. ${attempts} attempts left.";
                 } else {
                     errorMessage.textContent = "Too many failed attempts. Please wait ${lockoutTime} seconds.";
-                    loginBtn.disabled = true; // Disable login button
+                    loginBtn.disabled = true; 
                     
                     let countdown = lockoutTime;
                     const timer = setInterval(() => {
@@ -129,7 +129,7 @@
 
                         if (countdown < 0) {
                             clearInterval(timer);
-                            attempts = 3; // Reset attempts
+                            attempts = 3; 
                             errorMessage.textContent = "";
                             loginBtn.disabled = false; 
                         }
